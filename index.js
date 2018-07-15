@@ -29,7 +29,7 @@ bot.on('message', message => {
         if (msg === prefix + 'HELP') { // This checks if msg (the message but in all caps), is the same as the prefix + the command in all caps.
 
             // Now, let's send a response.
-            message.author.send('*Blaze Bot >> Coded by xDesi >> Prefix >> +*\n **Commands and More Information:** \n **Help** - Shows this Menu \n **Hello** - Say Hello to Blaze Bot! \n **Purge** - Removes a Specific Amount of Messages from a Channel. \n \n \n - - -**Information about BlazeCraft** - - - \n \n \n **You can open a support ticket in the #ticket-request channel by using -new. \n *The Server IP, Website, and Rules can be found in #information. Thanks!* '); // This 'sends' the message to the channel the message was in. You can change what is in the message to whatever you want.
+            message.author.send('*Blaze Bot >> Coded by xDesi >> Prefix >> +*\n **Commands and More Information:** \n **Help** - Shows this Menu \n **Hello** - Say Hello to Blaze Bot! \n **Purge** - Removes a Specific Amount of Messages from a Channel. \n **List** - Shows a list of the Support Team Members. \n \n \n - - -**Information about BlazeCraft** - - - \n \n \n **You can open a support ticket in the #ticket-request channel by using -new. \n *The Server IP, Website, and Rules can be found in #information. Thanks!* '); // This 'sends' the message to the channel the message was in. You can change what is in the message to whatever you want.
             message.channel.send('Help? No worries! ' + message.author + ' , Check your DMs!');
         }
 
@@ -79,3 +79,17 @@ bot.on('ready', () => {
 
 bot.login('NDY3NDk4MjQyODg4ODI2OTA5.DixWOA.uWgBBBAaLRg8kmc0xSxWxjB-pVM');
 
+
+
+
+// Help
+if (msg === prefix + 'TEAM') { // This checks if msg (the message but in all caps), is the same as the prefix + the command in all caps.
+
+// Now, let's send a response.
+message.author.send('*Current List of the Management (Support Team) People:* \n **xDesi - Owner** \n **Caro47 - Director** \n **Ah - Head-Admin** \n *Please keep in mind that the following people are the highest people in charge of the server, and they have different roles depending on their Rank.'); // This 'sends' the message to the channel the message was in. You can change what is in the message to whatever you want.
+
+
+
+
+
+}
