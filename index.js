@@ -3,7 +3,7 @@ const Discord = require('discord.js');
 const bot = new Discord.Client();
 
 // Global Settings
-const prefix = '+'; // This is the prefix, you can change it to whatever you want.
+const prefix = '!'; // This is the prefix, you can change it to whatever you want.
 
 // Listener Event: Runs whenever a message is received.
 bot.on('message', message => {
@@ -20,11 +20,11 @@ bot.on('message', message => {
     if (msg === prefix + 'HELLO') { // This checks if msg (the message but in all caps), is the same as the prefix + the command in all caps.
 
         // Now, let's send a response.
-        message.channel.send('~Hello ' + message.author + ' and welcome to BlazeCraft!~'); // This 'sends' the message to the channel the message was in. You can change what is in the message to whatever you want.
+        message.channel.send('Hello ' + message.author + ' and welcome to BlazeCraft!'); // This 'sends' the message to the channel the message was in. You can change what is in the message to whatever you want.
 
     }
 
-
+    
         // Help
         if (msg === prefix + 'HELP') { // This checks if msg (the message but in all caps), is the same as the prefix + the command in all caps.
 
@@ -78,3 +78,4 @@ bot.on('ready', () => {
 });
 
 bot.login('NDY3NDk4MjQyODg4ODI2OTA5.DixWOA.uWgBBBAaLRg8kmc0xSxWxjB-pVM');
+bot.user.setPresence({ status: 'online', game: { name: 'Coming Soon! | +help' } });
