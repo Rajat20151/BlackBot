@@ -79,4 +79,3 @@ bot.on('ready', () => {
 
 bot.login('NDY3NDk4MjQyODg4ODI2OTA5.DixWOA.uWgBBBAaLRg8kmc0xSxWxjB-pVM');
 
-bot.user.setPresence({ game: { name: 'Coming Soon! | +help', type: 0 } });
