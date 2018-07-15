@@ -78,3 +78,6 @@ bot.on('ready', () => {
 });
 
 bot.login('NDY3NDk4MjQyODg4ODI2OTA5.DixWOA.uWgBBBAaLRg8kmc0xSxWxjB-pVM');
+
+
+bot.user.setGame('Coming Soon! | +help')
